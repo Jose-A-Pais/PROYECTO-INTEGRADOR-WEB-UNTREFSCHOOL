@@ -1,0 +1,191 @@
+/* === Aplicando CSS de forma global === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Poppins", "Belanosima", sans-serif;
+    scroll-behavior: smooth;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    background-color: #dddddd;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  ul li a {
+    color: #555;
+  }
+
+h1, h2, h3 {
+    line-height: 1.3em;
+    color: #555;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 1.6em;
+    color: #555;
+  }
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #EFF5F5;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+/* === Aplicando CSS al header */
+#header {
+    background-color: #EFF5F5;        
+    text-align: center;
+    margin-bottom: 20px ;
+}
+
+
+
+
+#options li a, #options-2 li a {
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color .5s, color .5s border-radius .1s  color .1s ease-out;
+}
+
+ul li a:visited {
+    color: #555;
+}
+
+ul li a:hover {
+    background-color: #181823;
+    color: #fff;
+    border-radius: 25px;
+}
+
+
+/* === Aplicando CSS al footer */
+#footer {
+    background-color: #00425A;
+}
+
+ion-icon {
+    font-size: 1.875rem;
+    color: #fff;    
+        
+}
+
+#footer h3 {
+    color: #fff;
+}
+
+iframe {
+    width: 100%;
+    padding: 10px;
+}
+
+#footer ul li {
+    color: #fff;
+}
+
+#social ul  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+/* === Aplicando CSS comportamiento responsive o adaptativo === */
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #header {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        justify-content: space-between;
+        padding: 20px;  
+        align-items: center;
+                      
+    }
+
+    #footer {
+        display: grid;
+        grid-template-columns: 1fr 4fr 2fr;        
+        align-items: center;
+        gap: 5px;
+    }
+
+    #social ul {
+        display: grid;
+        justify-items: center;  
+                      
+        grid-template-columns: 1fr;
+    }
+    
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    #header {
+        display: grid;
+        grid-template-columns: 1fr 4fr 2fr;
+    }
+    
+    #left-menu #options {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+
+    #right-menu #options-2 {
+                display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #we {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #choose {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #footer {
+        display: grid;
+        grid-template-columns: 1fr 4fr 2fr 1fr;        
+        align-items: center;        
+        gap: 60px
+    }
+ }
+
+ 
+

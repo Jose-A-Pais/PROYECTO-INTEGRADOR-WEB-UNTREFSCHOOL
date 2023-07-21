@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="description" content="Proyecto final integrador: Desarrollo Web Frontend - Primer tramo">
+    <meta name="author" content="José Abel Pais">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untref School</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Poppins:wght@100;300&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">    
+</head>
+<body>
+    <header id="header">
+        <figure>
+          <a href="./index.html"><img src="./img/untref.png" alt="UNTREF logo" /></a>
+        </figure>  
+        <nav id="left-menu">
+          <ul id="options">
+            <!-- Estos cinco enlaces no supe como vincularlos a los id del index por eso los redirigí hacia el index.html -->
+            <li><a href="./index.html" >Quienes somos</a></li>      
+            <li><a href="./index.html">¿Por qué elegirnos?</a></li>
+            <li><a href="./index.html">Propuesta educativa</a></li>            
+          </ul>
+        </nav>
+        <nav id="right-menu">
+          <ul id="options-2">
+            <!--  Según creo que al ser una landing page no se puede vincular a las secciones internas desde otra página -->
+            <li><a href="./index.html">Últimas noticias</a></li>
+            <li><a href="./formulario.html">Contacto</a></li>            
+          </ul>
+        </nav>
+      </header>
+        <div id="titulo">
+            <h2>Formulario de Contacto</h2>
+        </div>
+        <form action="https://formsubmit.co/972827b76d38e16a826b592c02f22bdf" method="post">
+            <div class="form__container"></div>
+                <label for="name"></label>
+                <input type="text" id="name" required placeholder="Nombre completo">
+
+                <label for="email"></label>
+                <input type="email" id="email" required placeholder="Email">
+
+                <label for="consulta"></label>
+                <input type="text" id="consulta" placeholder="Consulta">
+            
+
+                <label for="mensaje"></label>
+                <textarea id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje aquí..."></textarea>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+
+</body>
+</html>
