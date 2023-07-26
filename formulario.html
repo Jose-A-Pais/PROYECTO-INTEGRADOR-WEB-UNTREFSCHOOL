@@ -1,59 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">    
-    <meta name="description" content="Proyecto final integrador: Desarrollo Web Frontend - Primer tramo">
-    <meta name="author" content="José Abel Pais">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Proyecto final integrador: Desarrollo Web Frontend - Primer tramo"
+    />
+    <meta name="author" content="José Abel Pais" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Untref School</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/form.css" />
+    <link rel="stylesheet" href="./css/master.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Poppins:wght@100;300&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">    
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Poppins:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <style>
+      /* === Aplicando detalles al framework de CSS Miligram para el formulario  === */
+      form {
+        background-color: #fff;
+        border-radius: 25px;
+        padding: 30px;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      textarea {
+        resize: none;
+      }
+      ul {
+        list-style-type: none;
+      }
+      body {
+        font-family: "Poppins", "Belanosima", sans-serif;
+        font-size: 2rem;
+      }
+      main {
+        padding-bottom: 30px;
+      }
+      ion-icon {
+        font-size: 2.875rem;
+      }
+      
+
+    </style>
+  </head>
+  <body id="subir">
     <header id="header">
-        <figure>
-          <a href="./index.html"><img src="./img/untref.png" alt="UNTREF logo" /></a>
-        </figure>  
-        <nav id="left-menu">
-          <ul id="options">
-            <!-- Estos cinco enlaces no supe como vincularlos a los id del index por eso los redirigí hacia el index.html -->
-            <li><a href="./index.html" >Quienes somos</a></li>      
-            <li><a href="./index.html">¿Por qué elegirnos?</a></li>
-            <li><a href="./index.html">Propuesta educativa</a></li>            
-          </ul>
-        </nav>
-        <nav id="right-menu">
-          <ul id="options-2">
-            <!--  Según creo que al ser una landing page no se puede vincular a las secciones internas desde otra página -->
-            <li><a href="./index.html">Últimas noticias</a></li>
-            <li><a href="./formulario.html">Contacto</a></li>            
-          </ul>
-        </nav>
-      </header>
-        <div id="titulo">
-            <h2>Formulario de Contacto</h2>
-        </div>
-        <form action="https://formsubmit.co/972827b76d38e16a826b592c02f22bdf" method="post">
-            <div class="form__container"></div>
-                <label for="name"></label>
-                <input type="text" id="name" required placeholder="Nombre completo">
+      <figure>
+        <a href="./index.html"
+          ><img src="./img/untref.png" alt="UNTREF logo"
+        /></a>
+      </figure>
+      <nav id="left-menu">
+        <ul id="options">
+          <!-- Estos cinco enlaces no supe como vincularlos a los id del index por eso los redirigí hacia el index.html -->
+          <li><a href="./index.html">Quienes somos</a></li>
+          <li><a href="./index.html">¿Por qué elegirnos?</a></li>
+          <li><a href="./index.html">Propuesta educativa</a></li>
+        </ul>
+      </nav>
+      <nav id="right-menu">
+        <ul id="options-2">
+          <!--  Según creo que al ser una landing page no se puede vincular a las secciones internas desde otra página -->
+          <li><a href="./index.html">Últimas noticias</a></li>
+          <li><a href="./formulario.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div id="titulo">
+        <h2>Formulario de Contacto</h2>
+      </div>
+      <form
+        action="https://formsubmit.co/972827b76d38e16a826b592c02f22bdf"
+        method="post"
+      >
+        <div class="form__container"></div>
+        <label for="name"></label>
+        <input
+          type="text"
+          id="name"
+          required
+          autofocus
+          placeholder="Nombre completo"
+        />
 
-                <label for="email"></label>
-                <input type="email" id="email" required placeholder="Email">
+        <label for="email"></label>
+        <input type="email" id="email" required placeholder="Email" />
 
-                <label for="consulta"></label>
-                <input type="text" id="consulta" placeholder="Consulta">
-            
+        <label for="consulta"></label>
+        <input type="text" id="consulta" placeholder="Consulta" />
 
-                <label for="mensaje"></label>
-                <textarea id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje aquí..."></textarea>
-                <button type="submit">Enviar</button>
-            </div>
-        </form>
-
-</body>
+        <label for="mensaje"></label>
+        <textarea
+          id="mensaje"
+          cols="30"
+          rows="10"
+          placeholder="Escriba su mensaje aquí..."
+        ></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+    <footer id="footer" class="container">
+      <div id="social">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/untref" target="_blank"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/untref" target="_blank"
+              ><ion-icon name="logo-twitter"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/canaluntref/" target="_blank"
+              ><ion-icon name="logo-youtube"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/untref/" target="_blank"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/edu/school?id=10153&trk=feed-actor-image"
+              target="_blank"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3>Instituto Untref School</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105009.3794776542!2d-58.72938719370357!3d-34.66623985191195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9f8ff113%3A0x22fd08da6711928d!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20-%20Sede%20Caseros%20I!5e0!3m2!1ses!2sar!4v1689908887666!5m2!1ses!2sar"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div>
+        <ul>
+          <li>
+            Dirección: Valentín Gómez 4828 38, Caseros, Provincia de Buenos
+            Aires
+          </li>
+          <li>Teléfonos: 4759-3528/3537/3578/0040</li>
+          <li>E-Mail: alumnos@untref.edu.ar</li>
+        </ul>
+      </div>
+      <div>
+        <a href="#subir"
+          ><ion-icon name="chevron-up-circle-outline"></ion-icon
+        ></a>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

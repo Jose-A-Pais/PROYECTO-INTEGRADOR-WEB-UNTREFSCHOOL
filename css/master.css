@@ -1,4 +1,4 @@
-/* === Aplicando CSS de forma global === */
+    /* === Aplicando CSS de forma global === */
 * {
     margin: 0;
     padding: 0;
@@ -102,13 +102,13 @@ iframe {
 
 #footer ul li {
     color: #fff;
+    margin-bottom: 20px ;
 }
 
 #social ul  {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    text-align: center;
+    grid-template-columns: repeat(2, 1fr);   
+    text-align: center;    
 }
 
 
