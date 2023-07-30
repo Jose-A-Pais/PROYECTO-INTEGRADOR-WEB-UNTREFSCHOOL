@@ -82,7 +82,7 @@ ul li a:hover {
 
 /* === Aplicando CSS al footer */
 #footer {
-    background-color: #00425A;
+    background-color: #00425A;    
 }
 
 ion-icon {
@@ -102,13 +102,14 @@ iframe {
 
 #footer ul li {
     color: #fff;
-    margin-bottom: 20px ;
+    margin-bottom: 20p ;
+    padding-top: 25px;
 }
 
 #social ul  {
     display: grid;
     grid-template-columns: repeat(2, 1fr);   
-    text-align: center;    
+    text-align: center;        
 }
 
 
@@ -135,9 +136,8 @@ iframe {
 
     #social ul {
         display: grid;
-        justify-items: center;  
-                      
-        grid-template-columns: 1fr;
+        justify-items: center;                       
+        grid-template-columns: 1fr;        
     }
     
  }

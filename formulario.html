@@ -23,29 +23,40 @@
     />
     <style>
       /* === Aplicando detalles al framework de CSS Miligram para el formulario  === */
-      form {
+      #form {
         background-color: #fff;
         border-radius: 25px;
         padding: 30px;
         width: 80%;
         margin: 0 auto;
-      }
+        min-width: 20rem;
+        max-width: 50rem; 
+        text-align: center  
+      }      
 
-      textarea {
+      #form textarea {
         resize: none;
       }
       ul {
         list-style-type: none;
       }
+
       body {
         font-family: "Poppins", "Belanosima", sans-serif;
         font-size: 2rem;
       }
-      main {
+
+      .container {
         padding-bottom: 30px;
+        margin-bottom: 20px;
       }
+      
       ion-icon {
         font-size: 2.875rem;
+      }
+
+      #social {
+        padding-top: 50px;
       }
       
 
@@ -80,7 +91,7 @@
       </div>
       <form
         action="https://formsubmit.co/972827b76d38e16a826b592c02f22bdf"
-        method="post"
+        method="post" id="form"
       >
         <div class="form__container"></div>
         <label for="name"></label>
